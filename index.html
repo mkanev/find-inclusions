@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Cross-Inclusion Finder</title>
+    <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.0.0/css/bootstrap.min.css"/>
+</head>
+<body>
+<div class="jumbotron">
+    <div class="container">
+        <h1>Inclusions finder</h1>
+    </div>
+</div>
+<div class="container">
+    <form role="form">
+        <div class="row">
+            <div id="alert" class="alert alert-warning" style="display: none;"></div>
+        </div>
+        <div class="row">
+            <div class="form-group col-lg-6">
+                <label for="listA">List A</label>
+                <textarea id="listA" name="listA" class="form-control" rows=10></textarea>
+            </div>
+            <div class="col-lg-6">
+                <label for="listB">List B</label>
+                <textarea id="listB" name="listB" class="form-control" rows=10></textarea>
+            </div>
+        </div>
+        <div class="row" style="margin: 15px 0;">
+            <div class="col-lg-4 col-lg-offset-4">
+                <button type="button" class="btn btn-info btn-block" onclick="activateFinder();">Find</button>
+            </div>
+        </div>
+        <div id="intersection" class="row" style="display: none;">
+            <div class="form-group col-lg-6 col-lg-offset-3">
+                <label for="targetA">Intersection</label>
+                <textarea id="targetA" name="targetA" class="form-control" rows=10></textarea>
+            </div>
+        </div>
+    </form>
+</div>
+<script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+<script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/lodash.js/2.2.1/lodash.min.js"></script>
+<script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.0.0/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="https://rawgithub.com/mkanev/find-inclusions/master/assets/js/finder.js"></script>
+</body>
+</html>
